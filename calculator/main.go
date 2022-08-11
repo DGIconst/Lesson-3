@@ -7,15 +7,15 @@ import (
 	"os"
 )
 
-func faktorial(n int64) int64{
-    if n == 0{
-        return 1
-    }
-    return n * faktorial(n-1)
+func faktorial(n int64) int64 {
+	if n == 0 {
+		return 1
+	}
+	return n * faktorial(n-1)
 }
 
 func main() {
-	var a, b, res float32 
+	var a, b, res float32
 	var op string
 	fmt.Print("Введите первое число: ")
 	fmt.Scanln(&a)
@@ -37,9 +37,9 @@ func main() {
 		}
 		res = a / b
 	case "^":
-			a := float64(a)
-			b := float64(b)
-			res := math.Pow(a, b)
+		a := float64(a)
+		b := float64(b)
+		res := math.Pow(a, b)
 		fmt.Printf("Результат выполнения операции: %.2f\n", res)
 		return
 	case "fakt":
